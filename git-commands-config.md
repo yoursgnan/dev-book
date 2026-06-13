@@ -8,6 +8,8 @@ git config --global alias.sus diff
 
 git config --global alias.shipit '!f() { git add . && git commit -m "$1" && git push; }; f'
 
+git config --global alias.grab '!f() { git pull origin "$1"; }; f'
+
 
 # usage
 
@@ -20,4 +22,6 @@ git touch main
 git sus
 
 git shipit "Fix bank reconciliation reset issue"
+
+git grab main
 
