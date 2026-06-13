@@ -10,6 +10,8 @@ git config --global alias.shipit '!f() { git add . && git commit -m "$1" && git 
 
 git config --global alias.grab '!f() { git pull origin "$1"; }; f'
 
+git config --global alias.serve push
+
 
 # usage
 
@@ -24,4 +26,6 @@ git sus
 git shipit "Fix bank reconciliation reset issue"
 
 git grab main
+
+git serve main
 
